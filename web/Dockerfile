@@ -9,7 +9,7 @@ COPY . /
 
 RUN pip3 install -r requirements.txt && pip3 install gunicorn
 
-echo "download Imagenet model for future use"
+# echo "download Imagenet model for future use"
 RUN python3 download_model.py
 
 ENTRYPOINT ["/runserver.sh"]
