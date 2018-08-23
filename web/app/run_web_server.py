@@ -1,9 +1,7 @@
 """
-Make flask server to preprocess the the image and queue to
-``redis`` database. 
-
-Check if predication is saved in ``redis`` data,
-Once predication is saved, output the predication json
+Make flask server to preprocess the the image and add queue to
+``redis`` database. Then check if predication is saved to ``redis`` database,
+once predication is saved, return the predication json.
 """
 
 import os
@@ -31,7 +29,7 @@ db = redis.StrictRedis(host=settings.REDIS_HOST,
 
 def prepare_image(image, target):
 	"""
-	Preprocess the image to prepare for predication
+	Preprocess the image for predication
 
 	Args:
 		images:``array``

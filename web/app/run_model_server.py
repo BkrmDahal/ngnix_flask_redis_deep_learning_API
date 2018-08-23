@@ -26,8 +26,8 @@ def classify_process():
 		In this example we load ``Resnet50`` trained on ``imagenet``.
 
 	Images stored in redis after pre-processing, 
-	we take image in batches from ``redis`` make
-	the predication and save the result back to ``redis`` as 
+	we take images in batch from ``redis`` database and
+	predicat the class. Than result are saved to ``redis`` as 
 	``key(id):predicated(json)`` 
 
 	"""

@@ -11,14 +11,13 @@ KERAS_REST_API_URL = "http://localhost/predict"
 IMAGE_PATH = "jemma.png"
 
 # load the input image and construct the payload for the request
-# image = open(IMAGE_PATH, "rb").read()
-# payload = {"image": image}
+image = open(IMAGE_PATH, "rb").read()
+payload = {"image": image}
 
 # submit the request
-# r = requests.post(KERAS_REST_API_URL, files=payload).json()
+r = requests.post(KERAS_REST_API_URL, files=payload).json()
 
 # ensure the request was sucessful
-r = {}
 if r.get("success", ''):
 	# loop over the predictions and display them
 	for (i, result) in enumerate(r["predictions"]):
