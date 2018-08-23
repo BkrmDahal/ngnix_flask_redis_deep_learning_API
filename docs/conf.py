@@ -26,6 +26,12 @@ import inspect
 sys.path.insert(0, os.path.abspath('../../'))
 sys.path.insert(0, os.path.abspath('../'))
 sys.path.insert(0, os.path.abspath('../web/app/'))
+sys.path.insert(0, os.path.abspath('../web/'))
+
+print(os.path.abspath('../../'), ">>>", 
+            os.path.abspath("../"), ">>>",
+            os.path.abspath('../web/app/'), ">>>", 
+            os.path.abspath('../web/'))
 
 # constant name <<change these value only>>
 PROJECT_NAME = 'ngnix_flask_redis_deep_learning_API'

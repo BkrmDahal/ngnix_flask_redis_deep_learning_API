@@ -13,7 +13,8 @@ Details:
 .. toctree::
    :maxdepth: 2
 
-   ngnix_flask_redis_deep_learning_API
+   modules
+   app
 
 
 Input
