@@ -8,49 +8,13 @@ Welcome to ngnix-flask-redis-deep-learning-API's documentation!
 
 Scalable deep learning model with Ngnix, flask, redis and docker.
 
-Ngnix-flask-redis-deep-learning-API
-------------------------------------
+Welcome and setup:
+=================
 
-.. code-block:: json
+.. toctree::
+   :maxdepth: 2
 
-    +-------------+       +------------+      +------------------------+     +-----------+
-    |             |       |            |      |                        |     |           |
-    |    nginx    +-------+  gunicorn  +------+  flask deep learning   +-----+   redis   |
-    |             |       |            |      |       API app          |     |           |
-    +-------------+       +------------+      +------------------------+     +-----------+
-
-
-Environments setup
-^^^^^^^^^^^^^^^^^^^^^
-
-1. Please install `docker` and `docker-compose`.
-
-.. code-block:: bash 
-
-    # install docker file
-    sudo apt remove docker docker-engine docker.io
-    sudo apt install apt-transport-https ca-certificates curl software-properties-common -y
-    curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
-    sudo apt-key fingerprint 0EBFCD88
-
-    sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable"
-    sudo apt update
-    sudo apt install docker-ce -y
-
-    # install docker compose
-    sudo curl -L https://github.com/docker/compose/releases/download/1.21.2/docker-compose-$(uname -s)-$(uname -m) -o /usr/local/bin/docker-compose
-    sudo chmod +x /usr/local/bin/docker-compose
-
-    # install docker as sudo for user so  that we dont have to type sudo before docker
-    # sudo usermod -aG docker $<<USERNAME>>
-
-
-2. Run docker-compose
-
-.. code-block:: bash 
-
-    docker-compose up -d
-
+   welcome
 
 Packages:
 =========
@@ -60,46 +24,21 @@ Packages:
 
    app
 
+Endpoints:
+=========
 
-Enpoints
---------
+.. toctree::
+   :maxdepth: 2
 
-    Input:
+   endpoints
 
-        .. code-block:: bash
 
-            curl -X POST -F image=@jemma.png 'http://localhost/predict'
+Indices and tables
+==================
 
-    Output:
-
-        .. code-block:: json
-
-            {
-            "predictions": [
-                {
-                "label": "beagle", 
-                "probability": 0.9461532831192017
-                }, 
-                {
-                "label": "bluetick", 
-                "probability": 0.031958963721990585
-                }, 
-                {
-                "label": "redbone", 
-                "probability": 0.0066171870566904545
-                }, 
-                {
-                "label": "Walker_hound", 
-                "probability": 0.003387963864952326
-                }, 
-                {
-                "label": "Greater_Swiss_Mountain_dog", 
-                "probability": 0.0025766845792531967
-                }
-            ], 
-            "success": true
-            }
-
+* :ref:`genindex`
+* :ref:`modindex`
+* :ref:`search`
 
 **********
 References
@@ -110,9 +49,3 @@ References
 .. -`Deep learning in production with Keras, Redis, Flask, and Apache`: https://www.pyimagesearch.com/2018/02/05/deep-learning-production-keras-redis-flask-apache/
 .. -`Github: docker-compose-flask`: https://github.com/xiaopeng163/docker-compose-flask
 
-Indices and tables
-==================
-
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
