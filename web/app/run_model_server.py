@@ -22,7 +22,7 @@ def classify_process():
 	pre-trained on ImageNet and provided by Keras, but you can
 	substitute in your own networks just as easily. 
 
-	note::
+	.. note::
 		In this example we load ``Resnet50`` trained on ``imagenet``.
 
 	Images stored in redis after pre-processing, 
