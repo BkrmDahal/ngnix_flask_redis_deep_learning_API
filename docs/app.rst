@@ -1,4 +1,4 @@
-Deep Learning API
+Deep learning API
 =================
 
 app.helpers module
