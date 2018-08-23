@@ -4,3 +4,5 @@ requests
 tensorflow
 redis
 pillow
+sphinx
+sphinx_rtd_theme

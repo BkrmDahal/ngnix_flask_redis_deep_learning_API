@@ -1,4 +1,4 @@
-# used ubuntu as there is there was using python:3.6 image
+# used ubuntu as there was issue using python:3.6 image
 
 FROM ubuntu:16.04
 
