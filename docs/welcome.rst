@@ -14,7 +14,7 @@ Ngnix-flask-redis-deep-learning-API
     +-------------+       +------------+      +------------------------+     +-----------+
 
 
-Environments setup
+Environment setup
 ------------------
 
 1. Please install `docker` and `docker-compose`.
