@@ -1,4 +1,7 @@
-# ngnix-flask-redis-deep-learning-API
+# Ngnix flask redis deep learning API
+[![Documentation Status](https://readthedocs.org/projects/ngnix-flask-redis-deep-learning-api/badge/?version=latest)](https://ngnix-flask-redis-deep-learning-api.readthedocs.io/en/latest/?badge=latest)
+
+Scalable deep learning model with Ngnix, flask, redis and docker. [Here is Documentation](https://ngnix-flask-redis-deep-learning-api.readthedocs.io/en/latest/)
 
 ```
 
