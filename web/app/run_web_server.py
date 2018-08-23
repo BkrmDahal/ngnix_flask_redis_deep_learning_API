@@ -1,4 +1,11 @@
-# import the necessary packages
+"""
+Make flask server to preprocess the the image and queue to
+``redis`` database. 
+
+Check if predication is saved ``redis`` if predication is saved
+output the predication
+"""
+
 import os
 import sys
 sys.path.insert(0, os.path.abspath('app/'))
@@ -23,6 +30,20 @@ db = redis.StrictRedis(host=settings.REDIS_HOST,
 	port=settings.REDIS_PORT, db=settings.REDIS_DB)
 
 def prepare_image(image, target):
+	"""
+	Preprocess the image to prepare for predication
+
+	Args:
+		images:``array``
+			Array from image
+		target:``array``
+			shape of image for reshape
+
+	Return:
+		Preprocesses image array
+
+	"""
+
 	# if the image mode is not RGB, convert it
 	if image.mode != "RGB":
 		image = image.convert("RGB")
@@ -38,10 +59,54 @@ def prepare_image(image, target):
 
 @app.route("/")
 def homepage():
+	"""
+	Endpoint for homepage
+	"""
 	return "Welcome to the PyImageSearch Keras REST API!"
 
 @app.route("/predict", methods=["POST"])
 def predict():
+	"""
+	Predicat the image class.
+
+	Send the image as post request.
+
+		.. code-block:: bash
+
+    		curl -X POST -F image=@jemma.png 'http://localhost/predict'
+
+	Return:
+		json of classes from predication
+
+		.. code-block:: json
+
+			{
+			"predictions": [
+				{
+				"label": "beagle", 
+				"probability": 0.9461532831192017
+				}, 
+				{
+				"label": "bluetick", 
+				"probability": 0.031958963721990585
+				}, 
+				{
+				"label": "redbone", 
+				"probability": 0.0066171870566904545
+				}, 
+				{
+				"label": "Walker_hound", 
+				"probability": 0.003387963864952326
+				}, 
+				{
+				"label": "Greater_Swiss_Mountain_dog", 
+				"probability": 0.0025766845792531967
+				}
+			], 
+			"success": true
+			}
+
+	"""
 	# initialize the data dictionary that will be returned from the
 	# view
 	data = {"success": False}

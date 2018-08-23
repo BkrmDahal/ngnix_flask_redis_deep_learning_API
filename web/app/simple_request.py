@@ -1,5 +1,6 @@
-# USAGE
-# python simple_request.py
+"""
+Simple post request using request library
+"""
 
 # import the necessary packages
 import requests

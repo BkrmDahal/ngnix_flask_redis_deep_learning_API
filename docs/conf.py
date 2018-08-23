@@ -28,10 +28,10 @@ sys.path.insert(0, os.path.abspath('../'))
 sys.path.insert(0, os.path.abspath('../web/app/'))
 
 # constant name <<change these value only>>
-PROJECT_NAME = 'Ngnix-flask-redis-deep-learning-API'
+PROJECT_NAME = 'ngnix_flask_redis_deep_learning_API'
 AUTHOR = 'Arch'
 VERSION = '0.5.0'
-GITHUB_LINK = "https://github.com/BkrmDahal/Ngnix-flask-redis-deep-learning-API/blob/master/%s.py%s"
+GITHUB_LINK = "https://github.com/BkrmDahal/ngnix_flask_redis_deep_learning_API/blob/master/%s.py%s"
 
 
 # -- General configuration ------------------------------------------------

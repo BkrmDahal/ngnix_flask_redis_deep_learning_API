@@ -1,4 +1,8 @@
-# import the necessary packages
+"""
+Run deep learning model which does the predication and update predication 
+to ``redis`` database
+"""
+
 from keras.applications import ResNet50
 from keras.applications import imagenet_utils
 import numpy as np
@@ -13,9 +17,21 @@ db = redis.StrictRedis(host=settings.REDIS_HOST,
 	port=settings.REDIS_PORT, db=settings.REDIS_DB)
 
 def classify_process():
-	# load the pre-trained Keras model (here we are using a model
-	# pre-trained on ImageNet and provided by Keras, but you can
-	# substitute in your own networks just as easily)
+	"""
+	Load the pre-trained Keras model (here we are using a model
+	pre-trained on ImageNet and provided by Keras, but you can
+	substitute in your own networks just as easily. 
+
+	note::
+		In this example we load ``Resnet50`` trained on ``imagenet``.
+
+	Images stored in redis after pre-processing, 
+	we take image in batches from ``redis`` make
+	the predication and save the result back to ``redis`` as 
+	``key(id):predicated(json)`` 
+
+	"""
+
 	print("* Loading model...")
 	model = ResNet50(weights="imagenet")
 	print("* Model loaded")
