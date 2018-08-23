@@ -1,6 +1,6 @@
 """
-Run deep learning model which does the predication and update predication 
-to ``redis`` database
+Run deep learning model which predication the classes and update predication 
+to ``redis`` database with id and json
 """
 
 from keras.applications import ResNet50

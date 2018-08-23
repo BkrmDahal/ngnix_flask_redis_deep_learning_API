@@ -1,4 +1,4 @@
-"""some helper funcation"""
+"""Helper funcation for preprocessing"""
 
 import numpy as np
 import base64

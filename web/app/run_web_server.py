@@ -2,8 +2,8 @@
 Make flask server to preprocess the the image and queue to
 ``redis`` database. 
 
-Check if predication is saved ``redis`` if predication is saved
-output the predication
+Check if predication is saved in ``redis`` data,
+Once predication is saved, output the predication json
 """
 
 import os
