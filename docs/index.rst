@@ -16,8 +16,8 @@ Welcome and setup:
 
    welcome
 
-App Package:
-============
+Deep learning API:
+==================
 
 .. toctree::
    :maxdepth: 2
@@ -47,6 +47,5 @@ References
 
 .. target-notes::
 
-.. -`Deep learning in production with Keras, Redis, Flask, and Apache`: https://www.pyimagesearch.com/2018/02/05/deep-learning-production-keras-redis-flask-apache/
-.. -`Github: docker-compose-flask`: https://github.com/xiaopeng163/docker-compose-flask
-
+    .. -`Deep learning in production with Keras, Redis, Flask, and Apache`: https://www.pyimagesearch.com/2018/02/05/deep-learning-production-keras-redis-flask-apache/
+    .. -`Github: docker-compose-flask`: https://github.com/xiaopeng163/docker-compose-flask

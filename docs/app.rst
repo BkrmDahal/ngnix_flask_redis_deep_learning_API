@@ -1,5 +1,5 @@
-App Package
-===========
+Deep Learning API
+=================
 
 app.helpers module
 ------------------

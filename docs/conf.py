@@ -37,7 +37,7 @@ print(os.path.abspath('../../'), ">>>",
 PROJECT_NAME = 'ngnix_flask_redis_deep_learning_API'
 AUTHOR = 'Arch'
 VERSION = '0.5.0'
-GITHUB_LINK = "https://github.com/BkrmDahal/ngnix_flask_redis_deep_learning_API/blob/master/%s.py%s"
+GITHUB_LINK = "https://github.com/BkrmDahal/ngnix_flask_redis_deep_learning_API/blob/master/web/%s.py%s"
 
 
 # -- General configuration ------------------------------------------------
