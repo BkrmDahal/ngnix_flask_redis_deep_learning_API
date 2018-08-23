@@ -1,8 +1,8 @@
 Endpoints
 =========
 
-Enpoints:
----------
+predict:
+--------
 
     Input:
 

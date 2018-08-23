@@ -9,15 +9,15 @@ Welcome to ngnix-flask-redis-deep-learning-API's documentation!
 Scalable deep learning model with Ngnix, flask, redis and docker.
 
 Welcome and setup:
-=================
+==================
 
 .. toctree::
    :maxdepth: 2
 
    welcome
 
-Packages:
-=========
+App Package:
+============
 
 .. toctree::
    :maxdepth: 2
@@ -25,7 +25,7 @@ Packages:
    app
 
 Endpoints:
-=========
+==========
 
 .. toctree::
    :maxdepth: 2
@@ -39,6 +39,7 @@ Indices and tables
 * :ref:`genindex`
 * :ref:`modindex`
 * :ref:`search`
+
 
 **********
 References
