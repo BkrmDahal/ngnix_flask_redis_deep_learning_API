@@ -45,7 +45,5 @@ Indices and tables
 References
 **********
 
-.. target-notes::
-
-    .. -`Deep learning in production with Keras, Redis, Flask, and Apache`: https://www.pyimagesearch.com/2018/02/05/deep-learning-production-keras-redis-flask-apache/
-    .. -`Github: docker-compose-flask`: https://github.com/xiaopeng163/docker-compose-flask
+* https://www.pyimagesearch.com/2018/02/05/deep-learning-production-keras-redis-flask-apache/
+* https://github.com/xiaopeng163/docker-compose-flask
