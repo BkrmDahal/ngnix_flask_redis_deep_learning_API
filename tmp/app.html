@@ -1,0 +1,437 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>app package &mdash; ngnix_flask_redis_deep_learning_API 0.5.0 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="app" href="modules.html" /> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html">
+          
+
+          
+            
+            <img src="_static/logo.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.5.0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="modules.html">app</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="#">app package</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#module-app.helpers">app.helpers module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#module-app.run_model_server">app.run_model_server module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#module-app.run_web_server">app.run_web_server module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#module-app.settings">app.settings module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#module-app.simple_request">app.simple_request module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#module-app.stress_test">app.stress_test module</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">app package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#module-app.helpers">app.helpers module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#module-app.run_model_server">app.run_model_server module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#module-app.run_web_server">app.run_web_server module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#module-app.settings">app.settings module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#module-app.simple_request">app.simple_request module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#module-app.stress_test">app.stress_test module</a></li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">ngnix_flask_redis_deep_learning_API</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="modules.html">app</a> &raquo;</li>
+        
+      <li>app package</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/app.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="app-package">
+<h1>app package<a class="headerlink" href="#app-package" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="module-app.helpers">
+<span id="app-helpers-module"></span><h2>app.helpers module<a class="headerlink" href="#module-app.helpers" title="Permalink to this headline">¶</a></h2>
+<p>some helper funcation</p>
+<dl class="function">
+<dt id="app.helpers.base64_decode_image">
+<code class="descclassname">app.helpers.</code><code class="descname">base64_decode_image</code><span class="sig-paren">(</span><em>a</em>, <em>dtype</em>, <em>shape</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/BkrmDahal/ngnix_flask_redis_deep_learning_API/blob/master/helpers.py#L21-L46"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#app.helpers.base64_decode_image" title="Permalink to this definition">¶</a></dt>
+<dd><p>Convert the string to a NumPy array using the supplied data
+type and target shape</p>
+<dl class="docutils">
+<dt>Args:</dt>
+<dd><dl class="first last docutils">
+<dt>a:<code class="docutils literal notranslate"><span class="pre">array</span></code></dt>
+<dd>Numpy Array</dd>
+<dt>dtype:<code class="docutils literal notranslate"><span class="pre">np.type</span></code></dt>
+<dd>np.type to convert too</dd>
+<dt>shape:<code class="docutils literal notranslate"><span class="pre">array</span></code></dt>
+<dd>shape of output</dd>
+</dl>
+</dd>
+<dt>Returns:</dt>
+<dd>Reshaped and encode image</dd>
+</dl>
+</dd></dl>
+
+<dl class="function">
+<dt id="app.helpers.base64_encode_image">
+<code class="descclassname">app.helpers.</code><code class="descname">base64_encode_image</code><span class="sig-paren">(</span><em>a</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/BkrmDahal/ngnix_flask_redis_deep_learning_API/blob/master/helpers.py#L7-L19"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#app.helpers.base64_encode_image" title="Permalink to this definition">¶</a></dt>
+<dd><p>Base64 encode the input NumPy array</p>
+<dl class="docutils">
+<dt>Args:</dt>
+<dd><dl class="first last docutils">
+<dt>a:<code class="docutils literal notranslate"><span class="pre">array</span></code></dt>
+<dd>Numpy Array</dd>
+</dl>
+</dd>
+<dt>Returns:</dt>
+<dd>Numpay array iecode into <code class="docutils literal notranslate"><span class="pre">uft-8</span></code></dd>
+</dl>
+</dd></dl>
+
+</div>
+<div class="section" id="module-app.run_model_server">
+<span id="app-run-model-server-module"></span><h2>app.run_model_server module<a class="headerlink" href="#module-app.run_model_server" title="Permalink to this headline">¶</a></h2>
+<p>Run deep learning model which does the predication and update predication 
+to <code class="docutils literal notranslate"><span class="pre">redis</span></code> database</p>
+<dl class="function">
+<dt id="app.run_model_server.classify_process">
+<code class="descclassname">app.run_model_server.</code><code class="descname">classify_process</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/BkrmDahal/ngnix_flask_redis_deep_learning_API/blob/master/run_model_server.py#L19-L95"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#app.run_model_server.classify_process" title="Permalink to this definition">¶</a></dt>
+<dd><p>Load the pre-trained Keras model (here we are using a model
+pre-trained on ImageNet and provided by Keras, but you can
+substitute in your own networks just as easily.</p>
+<dl class="docutils">
+<dt>note::</dt>
+<dd>In this example we load <code class="docutils literal notranslate"><span class="pre">Resnet50</span></code> trained on <code class="docutils literal notranslate"><span class="pre">imagenet</span></code>.</dd>
+</dl>
+<p>Images stored in redis after pre-processing, 
+we take image in batches from <code class="docutils literal notranslate"><span class="pre">redis</span></code> make
+the predication and save the result back to <code class="docutils literal notranslate"><span class="pre">redis</span></code> as 
+<code class="docutils literal notranslate"><span class="pre">key(id):predicated(json)</span></code></p>
+</dd></dl>
+
+</div>
+<div class="section" id="module-app.run_web_server">
+<span id="app-run-web-server-module"></span><h2>app.run_web_server module<a class="headerlink" href="#module-app.run_web_server" title="Permalink to this headline">¶</a></h2>
+<p>Make flask server to preprocess the the image and queue to
+<code class="docutils literal notranslate"><span class="pre">redis</span></code> database.</p>
+<p>Check if predication is saved <code class="docutils literal notranslate"><span class="pre">redis</span></code> if predication is saved
+output the predication</p>
+<dl class="function">
+<dt id="app.run_web_server.homepage">
+<code class="descclassname">app.run_web_server.</code><code class="descname">homepage</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/BkrmDahal/ngnix_flask_redis_deep_learning_API/blob/master/run_web_server.py#L60-L65"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#app.run_web_server.homepage" title="Permalink to this definition">¶</a></dt>
+<dd><p>Endpoint for homepage</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="app.run_web_server.predict">
+<code class="descclassname">app.run_web_server.</code><code class="descname">predict</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/BkrmDahal/ngnix_flask_redis_deep_learning_API/blob/master/run_web_server.py#L67-L162"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#app.run_web_server.predict" title="Permalink to this definition">¶</a></dt>
+<dd><p>Predicat the image class.</p>
+<p>Send the image as post request.</p>
+<blockquote>
+<div><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>
+</pre></div>
+</div>
+<p>curl -X POST -F <a class="reference external" href="mailto:image=&#37;&#52;&#48;jemma&#46;png">image=<span>&#64;</span>jemma<span>&#46;</span>png</a> ‘<a class="reference external" href="http://localhost/predict">http://localhost/predict</a>’</p>
+</div></blockquote>
+<dl class="docutils">
+<dt>Return:</dt>
+<dd><p class="first">json of classes from predication</p>
+<div class="last highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+<span class="nt">&quot;predictions&quot;</span><span class="p">:</span> <span class="p">[</span>
+        <span class="p">{</span>
+        <span class="nt">&quot;label&quot;</span><span class="p">:</span> <span class="s2">&quot;beagle&quot;</span><span class="p">,</span> 
+        <span class="nt">&quot;probability&quot;</span><span class="p">:</span> <span class="mf">0.9461532831192017</span>
+        <span class="p">},</span> 
+        <span class="p">{</span>
+        <span class="nt">&quot;label&quot;</span><span class="p">:</span> <span class="s2">&quot;bluetick&quot;</span><span class="p">,</span> 
+        <span class="nt">&quot;probability&quot;</span><span class="p">:</span> <span class="mf">0.031958963721990585</span>
+        <span class="p">},</span> 
+        <span class="p">{</span>
+        <span class="nt">&quot;label&quot;</span><span class="p">:</span> <span class="s2">&quot;redbone&quot;</span><span class="p">,</span> 
+        <span class="nt">&quot;probability&quot;</span><span class="p">:</span> <span class="mf">0.0066171870566904545</span>
+        <span class="p">},</span> 
+        <span class="p">{</span>
+        <span class="nt">&quot;label&quot;</span><span class="p">:</span> <span class="s2">&quot;Walker_hound&quot;</span><span class="p">,</span> 
+        <span class="nt">&quot;probability&quot;</span><span class="p">:</span> <span class="mf">0.003387963864952326</span>
+        <span class="p">},</span> 
+        <span class="p">{</span>
+        <span class="nt">&quot;label&quot;</span><span class="p">:</span> <span class="s2">&quot;Greater_Swiss_Mountain_dog&quot;</span><span class="p">,</span> 
+        <span class="nt">&quot;probability&quot;</span><span class="p">:</span> <span class="mf">0.0025766845792531967</span>
+        <span class="p">}</span>
+<span class="p">],</span> 
+<span class="nt">&quot;success&quot;</span><span class="p">:</span> <span class="kc">true</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="function">
+<dt id="app.run_web_server.prepare_image">
+<code class="descclassname">app.run_web_server.</code><code class="descname">prepare_image</code><span class="sig-paren">(</span><em>image</em>, <em>target</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/BkrmDahal/ngnix_flask_redis_deep_learning_API/blob/master/run_web_server.py#L32-L58"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#app.run_web_server.prepare_image" title="Permalink to this definition">¶</a></dt>
+<dd><p>Preprocess the image to prepare for predication</p>
+<dl class="docutils">
+<dt>Args:</dt>
+<dd><dl class="first last docutils">
+<dt>images:<code class="docutils literal notranslate"><span class="pre">array</span></code></dt>
+<dd>Array from image</dd>
+<dt>target:<code class="docutils literal notranslate"><span class="pre">array</span></code></dt>
+<dd>shape of image for reshape</dd>
+</dl>
+</dd>
+<dt>Return:</dt>
+<dd>Preprocesses image array</dd>
+</dl>
+</dd></dl>
+
+</div>
+<div class="section" id="module-app.settings">
+<span id="app-settings-module"></span><h2>app.settings module<a class="headerlink" href="#module-app.settings" title="Permalink to this headline">¶</a></h2>
+<p>Environment variables for app</p>
+<p># initialize Redis connection settings
+REDIS_HOST = “redis”
+REDIS_PORT = 6379
+REDIS_DB = 0</p>
+<p># initialize constants used to control image spatial dimensions and
+# data type
+IMAGE_WIDTH = 224
+IMAGE_HEIGHT = 224
+IMAGE_CHANS = 3
+IMAGE_DTYPE = “float32”</p>
+<p># initialize constants used for server queuing
+IMAGE_QUEUE = “image_queue”
+BATCH_SIZE = 32
+SERVER_SLEEP = 0.25
+CLIENT_SLEEP = 0.25</p>
+</div>
+<div class="section" id="module-app.simple_request">
+<span id="app-simple-request-module"></span><h2>app.simple_request module<a class="headerlink" href="#module-app.simple_request" title="Permalink to this headline">¶</a></h2>
+<p>Simple post request using request library</p>
+</div>
+<div class="section" id="module-app.stress_test">
+<span id="app-stress-test-module"></span><h2>app.stress_test module<a class="headerlink" href="#module-app.stress_test" title="Permalink to this headline">¶</a></h2>
+<p>Stress test for server</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>python stress_test.py
+</pre></div>
+</div>
+<dl class="function">
+<dt id="app.stress_test.call_predict_endpoint">
+<code class="descclassname">app.stress_test.</code><code class="descname">call_predict_endpoint</code><span class="sig-paren">(</span><em>n</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/BkrmDahal/ngnix_flask_redis_deep_learning_API/blob/master/stress_test.py#L25-L48"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#app.stress_test.call_predict_endpoint" title="Permalink to this definition">¶</a></dt>
+<dd><p>call the predication api</p>
+<dl class="docutils">
+<dt>Args:</dt>
+<dd><dl class="first last docutils">
+<dt>n: <code class="docutils literal notranslate"><span class="pre">int</span></code></dt>
+<dd>called number</dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+      
+        <a href="modules.html" class="btn btn-neutral" title="app" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2018, Arch.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'./',
+            VERSION:'0.5.0',
+            LANGUAGE:'en',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="_static/jquery.js"></script>
+      <script type="text/javascript" src="_static/underscore.js"></script>
+      <script type="text/javascript" src="_static/doctools.js"></script>
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+  
+
+  <script type="text/javascript" src="_static/js/theme.js"></script>
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+ <script type="text/javascript">
+    $(document).ready(function() {
+        $(".toggle > *").hide();
+        $(".toggle .header").show();
+        $(".toggle .header").click(function() {
+            $(this).parent().children().not(".header").toggle(400);
+            $(this).parent().children(".header").toggleClass("open");
+        })
+    });
+</script>
+
+
+</body>
+</html>

@@ -73,7 +73,7 @@ def predict():
 
 		.. code-block:: bash
 
-    		curl -X POST -F image=@jemma.png 'http://localhost/predict'
+    		   curl -X POST -F image=@jemma.png 'http://localhost/predict'
 
 	Return:
 		json of classes from predication
