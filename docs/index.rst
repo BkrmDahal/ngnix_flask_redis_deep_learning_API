@@ -1,4 +1,4 @@
-.. email documentation master file, created by
+.. ngnix-flask-redis-deep-learning-API, created by
    sphinx-quickstart on Thu Aug  9 13:47:11 2018.
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
@@ -6,21 +6,22 @@
 Welcome to ngnix-flask-redis-deep-learning-API's documentation!
 ===============================================================
 
-Scaleable deep learning model with Ngnix, flask, redis and docker.
+Scalable deep learning model with Ngnix, flask, redis and docker.
 
-# ngnix-flask-redis-deep-learning-API
+ngnix-flask-redis-deep-learning-API
+------------------------------------
 
-```
+.. code-block:: json
 
-+-------------+       +------------+         +--------------------------------+     +-----------+
-|             |       |            |         |                                |     |           |
-|    nginx    +-------+  gunicorn  +---------+  flask deep learning API app   +-----+   redis   |
-|             |       |            |         |                                |     |           |
-+-------------+       +------------+         +--------------------------------+     +-----------+
+    +-------------+       +------------+         +--------------------------------+     +-----------+
+    |             |       |            |         |                                |     |           |
+    |    nginx    +-------+  gunicorn  +---------+  flask deep learning API app   +-----+   redis   |
+    |             |       |            |         |                                |     |           |
+    +-------------+       +------------+         +--------------------------------+     +-----------+
 
-```
 
-## Environments setup
+Environments setup
+^^^^^^^^^^^^^^^^^^^^^
 
 1. Please install `docker` and `docker-compose`.  
 > Use ``install_docker.sh``
@@ -58,7 +59,6 @@ Packages:
 .. toctree::
    :maxdepth: 2
 
-   modules
    app
 
 
@@ -100,9 +100,14 @@ Output
     "success": true
     }
 
-### Inspire by 
-[Deep learning in production with Keras, Redis, Flask, and Apache](https://www.pyimagesearch.com/2018/02/05/deep-learning-production-keras-redis-flask-apache/)  
-[Github: docker-compose-flask](https://github.com/xiaopeng163/docker-compose-flask)
+**********
+References
+**********
+
+.. target-notes::
+
+.. -`Deep learning in production with Keras, Redis, Flask, and Apache`: https://www.pyimagesearch.com/2018/02/05/deep-learning-production-keras-redis-flask-apache/
+.. -`Github: docker-compose-flask`: https://github.com/xiaopeng163/docker-compose-flask
 
 Indices and tables
 ==================
