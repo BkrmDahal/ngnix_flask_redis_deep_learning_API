@@ -1,0 +1,6 @@
+flask
+keras
+requests
+tensorflow
+redis
+pillow
