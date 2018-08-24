@@ -4,10 +4,12 @@ services:
 
   redis:
     image: redis
+    restart: always
 
   web:
     build:
       context: ./web/
+    restart: always
     ports:
       - "8000:8000"
     links:
