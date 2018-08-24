@@ -8,6 +8,9 @@ Welcome to ngnix-flask-redis-deep-learning-API's documentation!
 
 Scalable deep learning model with Ngnix, flask, redis and docker.
 
+.. image:: https://i.imgur.com/5SaAys4.png
+  :alt: ngnix-flask-redis-deep-learning-API
+
 Welcome and setup:
 ==================
 
