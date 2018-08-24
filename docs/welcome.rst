@@ -5,6 +5,9 @@ Welcome and setup
 Ngnix-flask-redis-deep-learning-API
 ------------------------------------
 
+.. image:: https://i.imgur.com/5SaAys4.png
+  :alt: ngnix-flask-redis-deep-learning-API
+
 .. code-block:: json
 
     +-------------+       +------------+      +------------------------+     +-----------+
