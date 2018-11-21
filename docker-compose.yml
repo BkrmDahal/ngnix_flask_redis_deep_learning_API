@@ -10,6 +10,9 @@ services:
     build:
       context: ./web/
     restart: always
+    volumes:
+      - ./web/app:/app
+
     ports:
       - "8000:8000"
     links:
